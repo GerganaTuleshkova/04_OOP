@@ -15,4 +15,5 @@ def print_rhombus():
         stars_count = i
         print_line(spaces_count, stars_count)
 
+
 print_rhombus()
