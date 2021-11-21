@@ -10,9 +10,9 @@ class countdown_iterator:
         if self.number < 0:
             raise StopIteration
 
-        curren_number = self.number
+        current_number = self.number
         self.number -= 1
-        return curren_number
+        return current_number
 
 
 iterator = countdown_iterator(0)
