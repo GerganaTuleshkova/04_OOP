@@ -15,6 +15,7 @@ class dictionary_iter:
         self.current_key += 1
         return (self.keys[key_index_to_take], self.dict_obj[self.keys[key_index_to_take]])
 
+
 result = dictionary_iter({1: "1", 2: "2"})
 for x in result:
     print(x)
