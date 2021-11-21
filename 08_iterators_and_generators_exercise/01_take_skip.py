@@ -4,7 +4,6 @@ class take_skip:
         self.count = count
         self.current = 0
 
-
     def __iter__(self):
         return self
 
