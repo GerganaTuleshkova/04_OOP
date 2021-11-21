@@ -1,13 +1,7 @@
 def read_next(*args):
-    iterables = list(args)
-    index = 0
-
-    while index < len(iterables):
-        inner_index = 0
-        for el in iterables[index]:
+    for iterable in args:
+        for el in iterable:
             yield el
-
-        index += 1
 
 
 for i in read_next("Need", (2, 3), ["words", "."]):
