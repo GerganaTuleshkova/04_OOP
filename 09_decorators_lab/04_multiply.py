@@ -15,5 +15,6 @@ def multiply(times):
 def add_ten(number):
     return number + 10
 
+
 print(add_ten(6))
 print(add_ten(3))
