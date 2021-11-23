@@ -6,11 +6,12 @@ def cache(func):
 
     @wraps(func)
     def wrapper(arg):
-        key = arg
-        value = func(arg)
-        if key not in cache_dict:
-            cache_dict[key] = value
-        return value
+        if arg in cache_dict:
+            return cache_dict[arg]
+        result = func(arg)
+        cache_dict[arg] = result
+        return result
+
     wrapper.log = cache_dict
     return wrapper
 
